@@ -9,6 +9,11 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  /* google font Poppins */
+  font-family: "Poppins", sans-serif;
+}
+
 h1 {
   font-size: 2.6rem;
 }
@@ -27,6 +32,8 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  /* normal (non bolded) text */
+  font-weight: normal;
 }
 
 h4,
@@ -35,15 +42,22 @@ h5 {
 }
 
 a {
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: #4c6e97;
+  border: none;
+  color: whitesmoke;
 }
 
 /* Nav Section With Hero */
 
 .main-header {
   background: #131c27;
-  color: white;
+  color: whitesmoke;
 }
 
 nav {
@@ -70,4 +84,26 @@ nav ul {
 #logo {
   /* a little extra space for the logo to push nav menu items together */
   flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+}
+
+.hero {
+  /* add a gradient to a background image in the same command - here, our gradient is black (0,0,0) with an
+  alpha of 0.5 */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(imgs/landing-page.jpg);
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 5rem;
 }
