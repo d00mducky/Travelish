@@ -47,15 +47,19 @@ a {
 }
 
 nav {
+  /* NOTE: generally we dont want to specify height, but rather let the content take up the space with padding, margins, flexbox, etc.  */
   min-height: 10vh;
   display: flex;
   width: 90%;
   /* will put 5% margins on left and right because width is set to 90 */
   margin: auto;
+  padding: 2rem;
+  align-items: center;
 }
 
 nav ul {
   display: flex;
+  /* matching flex attribute with logo to create more even distribution */
   flex: 1 1 40rem;
   justify-content: space-around;
   align-items: center;
@@ -64,5 +68,6 @@ nav ul {
 }
 
 #logo {
-  flex: 1 1 40rem;
+  /* a little extra space for the logo to push nav menu items together */
+  flex: 2 1 40rem;
 }
