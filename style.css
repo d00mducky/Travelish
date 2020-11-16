@@ -167,7 +167,7 @@ nav ul {
 }
 
 .moving-cloud-1 {
-  animation: cloudAnimation 3s infinite alternate ease-in-out;
+  animation: cloudAnimation 5s infinite alternate ease-in-out;
   z-index: -1;
 }
 .moving-cloud-2 {
@@ -175,7 +175,7 @@ nav ul {
   /* moves the second cloud behind the first */
   z-index: -2;
   opacity: 0.9;
-  animation: cloudAnimation 3s infinite alternate ease-in-out;
+  animation: cloudAnimation 5.3s infinite alternate ease-in-out;
 }
 
 /* NOTE: used to chain together multiple animations */
@@ -235,6 +235,54 @@ nav ul {
 
 .card-icon {
   background: #27394e;
+}
+
+/* contact section */
+#contact {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(imgs/contact-mountain.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.6);
+  width: 60%;
+  margin: auto;
+  border-radius: 20px;
+  color: whitesmoke;
+}
+
+.form-header {
+  text-align: center;
+  padding: 3rem;
+}
+
+.name-form,
+.email-form {
+  padding: 2rem;
+  text-align: center;
+}
+
+.form-wrapper label {
+  margin: 0rem 1.5rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 5rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.form-wrapper input {
+  padding: 1rem 3rem;
 }
 
 /* media queries */
