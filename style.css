@@ -166,6 +166,7 @@ nav ul {
   background: linear-gradient(#131c27, #663b34);
   /* webkit adds support for items in browsers that otherwise might not support it */
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
