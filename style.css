@@ -110,6 +110,38 @@ nav ul {
   padding: 5rem;
 }
 
+/* locations section */
+
+#locations {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(imgs/new-york-page.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.locations-header {
+  width: 90%;
+  margin: auto;
+}
+
+.locations-header h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+
+.locations-header h3 {
+  padding: 4rem 0rem;
+  /* NOTE: here is a cool way to add gradient to text : */
+  background: linear-gradient(#131c27, #663b34);
+  /* webkit adds support for items in browsers that otherwise might not support it */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* media queries */
 
 /* when the display meets a mobile view width, send the logo to the center */
@@ -120,6 +152,7 @@ nav ul {
   }
 }
 
+/* when the display meets a mobile view width, set font size */
 @media screen and (max-width: 948px) {
   html {
     font-size: 45%;
