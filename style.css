@@ -70,6 +70,10 @@ button:hover {
 .main-header {
   background: #131c27;
   color: whitesmoke;
+  /* forces the nav to remain on the top of the page */
+  top: 0px;
+  position: sticky;
+  z-index: 3;
 }
 
 nav {
@@ -238,6 +242,7 @@ nav ul {
 }
 
 /* contact section */
+
 #contact {
   min-height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
