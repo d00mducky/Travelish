@@ -52,6 +52,13 @@ button {
   border: none;
   color: whitesmoke;
   transition: background 0.5s ease-in-out;
+  /* NOTE: there are a ton of cool techniques to use with animation e.g. :
+  animation: cloudAnimation 2s infinite alternate;
+  animation-iteration-count: 3;
+  animation-direction: reverse;
+  animation-duration: infinite;
+
+  */
 }
 
 button:hover {
@@ -127,11 +134,13 @@ nav ul {
   align-items: center;
   /* to contain the clouds within locations section */
   position: relative;
+  /* hides everything that extends beyond its limits */
+  overflow: hidden;
 }
 
 #locations img {
-  min-height: 50vh;
-  width: 60%;
+  /* min-height: auto; */
+  /* width: 60%; */
 }
 
 .locations-header {
@@ -158,27 +167,53 @@ nav ul {
   position: absolute;
   top: 0%;
   right: 0%;
+  /* makes our images non-selectable */
+  pointer-events: none;
 }
 
 .moving-cloud-1 {
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+  z-index: -1;
 }
 .moving-cloud-2 {
   top: 20%;
   /* moves the second cloud behind the first */
-  z-index: -1;
+  z-index: -2;
   opacity: 0.9;
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
 }
+
+/* NOTE: used to chain together multiple animations */
+@keyframes cloudAnimation {
+  from {
+    /* moves the content up and right */
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
 /* media queries */
 
-/* when the display meets a mobile view width, send the logo to the center */
+/* when the display meets a mobile (phone-sized) view width, send the logo to the center */
 @media screen and (max-width: 686px) {
   #logo {
     padding: 1rem;
     text-align: center;
   }
+  .cloud {
+    height: 60rem;
+  }
+  /* .moving-cloud-1 {
+    z-index: -1;
+  }
+  .moving-cloud-2 {
+    z-index: -2;
+  } */
 }
 
-/* when the display meets a mobile view width, set font size */
+/* when the display meets a mobile (tablet-sized) view width, set font size */
 @media screen and (max-width: 948px) {
   html {
     font-size: 45%;
