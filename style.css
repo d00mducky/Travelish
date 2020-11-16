@@ -108,7 +108,7 @@ nav ul {
 .hero {
   /* add a gradient to a background image in the same command - here, our gradient is black (0,0,0) with an
   alpha of 0.5 */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), transparent),
     url(imgs/landing-page.jpg);
   min-height: 90vh;
   background-repeat: no-repeat;
@@ -130,7 +130,7 @@ nav ul {
 
 #locations {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), transparent),
     url(imgs/new-york-page.png);
   background-position: center;
   background-size: cover;
@@ -245,7 +245,7 @@ nav ul {
 
 #contact {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), transparent),
     url(imgs/contact-mountain.png);
   background-position: center;
   background-size: cover;
