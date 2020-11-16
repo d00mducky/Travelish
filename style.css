@@ -65,6 +65,13 @@ button:hover {
   background: #27394e;
 }
 
+button:focus {
+  /* same as original color just darker */
+  background: #324863;
+  outline-style: solid;
+  outline-color: whitesmoke;
+}
+
 /* Nav Section With Hero */
 
 .main-header {
