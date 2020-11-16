@@ -51,6 +51,11 @@ button {
   background: #4c6e97;
   border: none;
   color: whitesmoke;
+  transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+  background: #27394e;
 }
 
 /* Nav Section With Hero */
@@ -120,6 +125,13 @@ nav ul {
   background-size: cover;
   display: flex;
   align-items: center;
+  /* to contain the clouds within locations section */
+  position: relative;
+}
+
+#locations img {
+  min-height: 50vh;
+  width: 60%;
 }
 
 .locations-header {
@@ -142,6 +154,20 @@ nav ul {
   -webkit-text-fill-color: transparent;
 }
 
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+.moving-cloud-1 {
+}
+.moving-cloud-2 {
+  top: 20%;
+  /* moves the second cloud behind the first */
+  z-index: -1;
+  opacity: 0.9;
+}
 /* media queries */
 
 /* when the display meets a mobile view width, send the logo to the center */
